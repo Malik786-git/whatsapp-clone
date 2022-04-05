@@ -22,6 +22,8 @@ body {
 aside {
     width: 350px;
     background: #ffff;
+    overflow: hidden;
+
 }
 
 main {
