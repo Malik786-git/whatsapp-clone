@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WhatsApp</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #23a884;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapped {
+            margin-top: 20px;
+            height: 620px;
+            width: 1000px;
+            background: rgb(223, 186, 186);
+            display: flex;
+            flex-direction: row;
+        }
+
+        aside {
+            width: 350px;
+            background: #ffff;
+        }
+
+        main {
+            width: 650px;
+            background: rebeccapurple;
+        }
+
+        .navbar {
+            padding: 5px;
+            height: 50px;
+            background: #F0F2F5;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logo figure img {
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+
+        .login-section ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .login-section ul li {
+            margin: 10px;
+        }
+
+        .login-section ul li a i {
+            color: #54656f;
+        }
+
+        .search {
+            height: 40px;
+            padding: 5px;
+            border: 1px solid #F0F2F5;
+        }
+
+        .search .search-box {
+            margin: 0 auto;
+            width: 95%;
+            height: 95%;
+            background-color: #F0F2F5;
+            color: #54656f;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .search .search-box input {
+            width: 90%;
+            margin-left: 5px;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .chat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat .contact {
+            display: flex;
+            padding: 5px;
+        }
+
+        .chat .contact figure {
+            width: 20%;
+        }
+
+        .chat .contact figure img {
+            border-radius: 50%;
+        }
+
+        .chat .contact .detail {
+            padding: 5px;
+            width: 80%;
+            border-bottom: 1px solid #E4E2DE;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .chat .contact .detail small i {
+            color: rgb(74, 165, 207);
+        }
+
+        .detail-user {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: inline-block;
+            width: 200px;
+            height: 35px;
+        }
+
+        .detail-user small {
+            color: #54656f;
+        }
+
+        .messages {
+            background: url('./images/whats.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 85%;
+        }
+
+        .type-message {
+           padding: 5px;
+            height: 43px;
+            background-color: #F0F2F5;
+        }
+        .type-message input{
+            width: 87%;
+            padding: 8px;
+            background: white;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        .type-message i{
+            font-size: 20px;
+            padding: 3px;
+            color: #54656f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapped">
+        <aside>
+            <!-- side bar -->
+            <!-- navbar for user login and setting -->
+            <nav class="navbar">
+                <div class="logo">
+                    <figure>
+                        <img src="./images/mypic.png" alt="user" width="40px" height="40px">
+                    </figure>
+                </div>
+                <div class="login-section">
+                    <ul>
+                        <li><a href=""><i class="fa fa-circle-o-notch" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-comment" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <!-- search bar for search contact -->
+            <div class="search">
+                <div class="search-box">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="search" placeholder="Search or start new chat">
+                </div>
+            </div>
+            <!-- chat list of contact -->
+            <div class="chat">
+                <!-- contacts -->
+                <div class="contact">
+                    <figure>
+                        <img src="./images/trio.png" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>Trio &#128578;</p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <figure>
+                        <img src="./images/smit.png" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>SMIT Group &#127752;</p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <figure>
+                        <img src="./images/4.jpg" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>Ashar Ahmed</p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <figure>
+                        <img src="./images/5.jpg" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>Ali Abidi</p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <figure>
+                        <img src="./images/con.jpeg" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>Owias Khan &#128064;</p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <figure>
+                        <img src="./images/8.jpeg" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>Haroon Ahmed</p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <figure>
+                        <img src="./images/con2.jpeg" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>Jorden 🔥</p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <figure>
+                        <img src="./images/mypic.png" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>My Contact</p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+                <div class="contact">
+                    <figure>
+                        <img src="./images/4.jpg" alt="" width="50px" height="45px">
+                    </figure>
+                    <div class="detail">
+                        <p>Danial </p>
+                        <small> <i class="fa fa-check" aria-hidden="true"></i>Hello Student!</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section class="navbar user-chat">
+                <div class="logo">
+                    <figure>
+                        <img src="./images/smit.png" alt="user" width="40px" height="40px">
+
+                        <div class="detail-user">
+                            <span>SMIT Group</span> <br>
+                            <small>online</small>
+                        </div>
+
+                    </figure>
+
+                </div>
+                <div class="login-section">
+                    <ul>
+                        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+            </section>
+            <section class="messages">
+
+            </section>
+            <section class="type-message">
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                <i class="fa fa-paperclip" aria-hidden="true"></i>
+
+                <input type="text" placeholder=" Type a message">
+
+                <i class="fa fa-microphone" aria-hidden="true"></i>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
